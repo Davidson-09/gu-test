@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ICRGU</title>
+</head>
+<body id="main-container">
+
+    <div class="home-container">
+        <nav>
+            <img class="nav-logo" src="assets/images/ICRGUlogo.jpeg" alt="ICRGU logo"/>
+            <ul>
+                <li>
+                    <a href="services.html">SERVICES</a>
+                    <a href="contact.html">CONTACT US</a>
+                    <a href="developer.html">DEVELOPER</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-container">
+            <img src="assets/images/rgu_logo.jpeg" alt="ICRGU logo"/>
+            <header>
+                <h1>Welcome to the ICRGU health facility</h1>
+            </header>
+
+            <div class="link-container">
+                <a href="bookappointment.html" class="cta-btn">Book appointment</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div style="display:flex; justify-content:space-evenly; width:100%;">
+            <div class="footer-item">
+                <p class="footer-item-header">ABOUT</p>
+                <p style="color:white; font-size:0.8em; text-align:left; width:70%;">RGU prides itself on delivering a high-quality vocational education and relevant curriculum, providing learners with the skills they require to thrive throughout their careers. As a result, the university has a reputation for producing graduates that are highly sought after by employers.</p>
+            </div>
+            <div class="footer-item">
+                <p class="footer-item-header" style="margin-left: 1em;">Quick Links</p>
+                <ul style="list-style:none; width: 100%; display:flex; flex-direction:column; align-items:start;">
+                        <div class="footer-list-item"><a href="index.html">Home</a></div>
+                        <div class="footer-list-item"><a href="bookappointment.html">Admission Requirements</a></div>
+                        <div class="footer-list-item"><a href="services.html">Why come to this health facility</a></div>
+                        <div class="footer-list-item"><a href="developer.html">Developer</a></div>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <p class="footer-item-header">CONTACT US</p>
+                <div style="display:flex; align-items:start;">
+                    <div><img src="assets/socialIcons/facebook.svg" alt="facebook logo" class="social-icons"/></div>
+                    <div><img src="assets/socialIcons/x.svg" alt="x logo" class="social-icons"/></div>
+                    <div><img src="assets/socialIcons/instagram.svg" alt="instagram logo" class="social-icons"/></div>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 ICRGU health facility. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Array of image URLs
+        const images = [
+            'assets/images/doctorandpatient.jpeg',
+            'assets/images/pic1.jpeg',
+            'assets/images/pic2.jpeg',
+            // Add more image URLs as needed
+        ];
+
+        // Function to change background image every second
+        function changeBackground() {
+            const imageDiv = document.getElementById('main-container');
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const randomImage = images[randomIndex];
+            document.body.style.backgroundImage = `url(${randomImage})`;
+        }
+
+        // Call the function initially and set interval for every second
+        changeBackground(); // Initial call
+        setInterval(changeBackground, 5000); // Repeat every second
+    </script>
+
+</body>
+</html>

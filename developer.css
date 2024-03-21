@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.job {
+    margin-bottom: 10px;
+}
+
+.education {
+    margin-bottom: 10px;
+}
